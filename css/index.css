@@ -1,0 +1,679 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.all {
+	width: 100%;
+}
+
+html {
+	font-size: 1em;
+	/*设置父元素初始像素*/
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*客服部分*/
+
+.kefu {
+	position: fixed;
+	z-index: 200;
+	bottom: 0.875rem;
+	left: 85%;
+}
+#kefu1{
+	width: 100px;
+}
+#kefu2 {
+	width: 100px;
+	margin-top: 0.25rem;
+	display: block;
+	border: solid 1px cornflowerblue;
+}
+
+.kefu a {
+	text-decoration: none;
+}
+
+.kefu p {
+	width: 100px;
+	background-color: white;
+	color: cornflowerblue;
+	text-align: center;
+	font-size: 0.875rem;
+	margin-top: 0.25rem;
+	border: solid 1px cornflowerblue;
+	position: relative;
+}
+
+#kefu3 {
+	position: absolute;
+}
+
+
+/*导航部分*/
+
+.header {
+	width: 100%;
+}
+
+#top {
+	background: white;
+	z-index: 100;
+	width: 100%;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	box-sizing: border-box;
+}
+
+#head {
+	display: none;
+}
+
+.sjx {
+	width: 0px;
+	height: 0px;
+	border: 4px solid #666;
+	border-left-color: white;
+	border-right-color: white;
+	border-bottom-color: white;
+	display: inline-block;
+}
+
+
+/*banner部分*/
+
+.banner {
+	width: 100%;
+}
+
+.banner img {
+	width: 100%;
+}
+
+/*了解商脉部分*/
+
+.content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.About {
+	width: 100%;
+	margin: 50px auto;
+}
+
+.About img {
+	max-width: 100%;
+}
+
+.About h2 {
+	font-size: 1.5rem;
+	margin: 10px 0;
+}
+
+.About p {
+	text-indent: 20px;
+	font-size: 1rem;
+	line-height: 30px;
+	padding: 10px 0;
+	color: #333;
+}
+
+.About h4 {
+	margin-top: 15px;
+}
+
+#more {
+	margin-top: 5px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: solid 1px #dcdcdc;
+	background: white;
+	color: #337ab7;
+}
+
+#more:hover {
+	color: gray;
+}
+
+
+/*团队部分*/
+
+.Team {
+	margin: 50px auto;
+	border: 1px solid white;
+	width: 100%;
+	position: relative;
+}
+
+.Team img {
+	display: block;
+	max-width: 100%;
+	float: right;
+}
+
+.teamtitle {
+	position: absolute;
+	width: 100%;
+}
+
+.teamtitle h2 {
+	float: right;
+	font-size: 1.5rem;
+	margin: 50px 0;
+}
+
+@keyframes showbg {
+	0% {
+		background: rgba(255, 255, 255, 0);
+	}
+	100% {
+		background: rgba(0, 0, 0, 0.5);
+	}
+}
+
+.teamimgs {
+	width: 100%;
+	margin-top: 90px;
+}
+
+.teamimgs ul {
+	list-style: none;
+}
+
+.teamimgs ul li {
+	display: inline-block;
+	float: left;
+	width: 30%;
+	border: solid 1px gainsboro;
+	border-radius: 5px;
+	position: relative;
+}
+
+
+.img1 img {
+	width: 97%;
+	margin: 5px;
+}
+
+.img1:hover .imginfo1 {
+	display: block;
+}
+
+.imginfo1 {
+	display: none;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	position: absolute;
+	margin: 0;
+	-moz-animation: showbg 0.3s ease forwards;
+	-webkit-animation: showbg 0.3s ease forwards;
+	-ms-animation: showbg 0.3s ease forwards;
+	animation: showbg 0.3s ease forwards;
+}
+
+.img1:hover .userinfo1 {
+	display: block;
+}
+
+.userinfo1 {
+	margin-top: 30%;
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+	font-family: "微软雅黑";
+	display: none;
+}
+
+
+
+.teamimgs ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.teamp {
+	text-align: center;
+	line-height: 30px;
+}
+
+.teamimgs2 {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.teamimgs2 ul {
+	list-style: none;
+}
+
+.teamimgs2 ul li {
+	position: relative;
+	display: inline-block;
+	width: 48%;
+	border: solid 1px gainsboro;
+	border-radius: 5px;
+}
+
+
+.bg {
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	background: #000;
+	opacity: 0.5;
+}
+
+.bg:hover {
+	opacity: 0;
+}
+
+.teamimgs2 img {
+	margin: 5px;
+	width: 97%;
+}
+
+
+
+/*新闻部分*/
+
+.News {
+	width: 100%;
+	margin: 50px auto;
+}
+
+.News h2 {
+	margin: 10px 0;
+}
+
+.News img {
+	max-width: 100%;
+}
+
+.news {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.newsleft {
+	float: left;
+	width: 47%;
+}
+
+
+.newsleft img {
+	width: 97%;
+	border: solid 1px gainsboro;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.newsright {
+	float: right;
+	width: 48%;
+	border: solid 1px gainsboro;
+	border-radius: 5px;
+}
+
+
+.newsright ul li {
+	display: inline-block;
+	list-style: none;
+	background-color: #DCDCDF;
+	color: white;	
+	width: 80%;
+	line-height: 30px;
+	margin: 15px auto;
+}
+.newsright ul li:hover{
+	background: #8ec7e5;
+	height: 100%;
+}
+.newsright ul li a {
+	font-size: 0.875rem;
+	float: left;
+	width: 70%;
+	margin: 15px auto;
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+}
+
+.newsright ul li h4 {
+	text-align: center;
+	float: left;
+	background-color: grey;
+	width: 15%;
+}
+
+.more3 {
+	width: 7%;
+	margin: 0 auto;
+}
+
+
+
+
+/*案例部分*/
+
+.Anli {
+	border: 1px solid white;
+	width: 100%;
+	margin: 50px auto;
+	position: relative;
+}
+
+.Anli img {
+	max-width: 100%;
+	float: right;
+}
+
+.anlititle {
+	position: absolute;
+	width: 100%;
+}
+
+.anlititle h2 {
+	float: right;
+	font-size: 1.5rem;
+	margin: 50px 0;
+}
+
+.anliimgs {
+	width: 100%;
+	margin-top: 90px;
+	margin-left: 15px;
+}
+
+
+.anliimgs ul {
+	list-style: none;
+}
+
+.anliimgs ul li {
+	border: solid 1px gainsboro;
+	border-radius: 5px;
+	width: 22%;
+	float: left;
+	overflow: hidden;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+.anliimgs ul li img {
+	width: 97%;
+	padding: 5px;
+}
+
+.anliimgs ul li:hover img {
+	transition: 1s;
+	transform: scale(1.2);
+	/*放大1.2倍*/
+}
+
+
+#more4 {
+	margin: 30px auto;
+	margin-left: 45%;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: solid 1px #dcdcdc;
+	background: white;
+	color: #337ab7;
+}
+
+#more4:hover {
+	color: gray;
+}
+
+
+
+/*联系部分*/
+
+.contact {
+	width: 100%;
+	margin: 20px auto;
+}
+
+.contact img {
+	max-width: 100%;
+}
+
+.contact h2 {
+	margin: 10px 0;
+}
+
+.contactp {
+	line-height: 24px;
+}
+
+
+/*footer部分*/
+
+.footer {
+	width: 100%;
+	background: #333333;
+	color: white;
+	line-height: 24px;
+	font-family: "微软雅黑";
+}
+
+.footerlogo img {
+	max-width: 100%;
+}
+
+.footerlian ul li {
+	line-height: 30px;
+	list-style: none;
+}
+
+.footerlian ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	/*导航栏*/
+	.logo {
+		margin: 3px auto;
+		width: 16%;
+		float: left;
+	}
+	.logo img {
+		width: 100%;
+	}
+	.navlist {
+		width: 82%;
+		line-height: 50px;
+		float: right;
+	}
+	.navlist ul {
+		list-style: none;
+	}
+	.navlist ul li {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		padding: 0px 15px;
+	}
+	#sub1 {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		list-style: none;
+		display: none;
+	}
+	#sub1  li {
+		border-bottom: solid 1px grey;
+		background: white;
+	}
+	#sub1 li:hover{
+		background: #bce6fa;
+	}
+	.navlist ul li:hover #sub1 {
+		display: block;
+	}
+	.navlist ul li a {
+		color: #666;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 1em;
+	}
+	.navone {
+		float: left;
+	}
+	.navtwo {
+		float: right;
+	}
+	
+	/*团队部分*/
+	.teamimgs ul li:nth-child(2) {
+		margin: 0 50px;
+	}
+	
+	/*footer部分*/
+	.footerlogo {
+		width: 35%;
+		margin: 30px 50px;
+		float: left;
+	}
+	.footerlian {
+		margin-top: 30px;
+		width: 45%;
+		float: right;
+	}
+	.footerlian ul {
+		display: inline-block;
+		margin-left: 35px;
+	}
+}
+
+
+/*小于768px的导航样式*/
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+	/*客服部分修改*/
+	.kefu {
+		left: 60%;
+	}
+	/*导航栏部分修改*/
+	#top {
+		padding: 0;
+	}
+	#head {
+		width: 100%;
+		display: block;
+		height: 50px;
+		line-height: 50px;
+		border-bottom: solid 2px #ccc;
+	}
+	.navlogo {
+		float: left;
+		width: 60%;
+		height: 50px;
+	}
+	.navlogo img {
+		display: inline-block;
+		max-width: 100%;
+	}
+	.navbar {
+		width: 50px;
+		float: right;
+		margin-top: 5px;
+	}
+	.navbar span {
+		display: inline-block;
+		display: block;
+		width: 20px;
+		height: 6px;
+		border-bottom: solid 1px black;
+	}
+	.logo {
+		display: none;
+	}
+	.navlist {
+		line-height: 30px;
+		width: 100%;
+		display: none;
+	}
+	.navlist ul {
+		list-style: none;
+	}
+	.navlist ul li {
+		display: block;
+		position: relative;
+		text-align: center;
+		border-bottom: solid 1px #ccc;
+	}
+	.navlist ul li a {
+		color: #666;
+		text-decoration: none;
+		font-size: 1rem;
+	}
+	.navlist ul li:hover {
+		background: #93d2f1;
+	}
+	#sub1 {
+		width: 100%;
+		display: none;
+	}
+	#sub1 li {
+		background: white;
+		border: none;
+	}
+	#sub1 li:hover{
+		background: #bce6fa;
+	}
+	.navlist ul li:hover #sub1 {
+		display: block;
+	}
+	
+	/*团队部分修改*/
+	.teamimgs ul li {
+		width: 100%;
+	}
+	
+	.teamimgs2 ul li {
+		width: 100%;
+	}
+	
+	/*新闻部分修改*/
+	.newsleft {
+		width: 100%;
+	}
+	.newsright {
+		width: 100%;
+	}
+	
+	/*案例部分修改*/
+	.anliimgs {
+		margin-left: 0;
+	}
+	
+	.anliimgs ul li {
+		width: 100%;
+		margin: 0;
+	}
+	#more4 {
+		margin: 30px auto;
+		margin: 30%;
+	}
+	
+	/*footer部分修改*/
+	.footerlogo {
+		width: 100%;
+	}
+	#footerlian {
+		width: 100%;
+	}
+}
